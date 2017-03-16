@@ -120,6 +120,18 @@
 
 #define kJian64 64
 
+#define kDeviceType @"1"   //deviceType 0android 1ios 2weixin 3pc
+#define kMd5SecretCode @"luobopj2017!@#$%^&*1382593671"  //发送验证码的安全码
+
+typedef enum {
+    SendSecurtyTypeLogin = 0,
+    SendSecurtyTypeRegister,
+    SendSecurtyTypeChangeMobile,
+    SendSecurtyTypeChangePsd
+} SendSecurtyType;
+
+#define kSendSecurtyType(enum) [@[@"0",@"1",@"2",@"3"] objectAtIndex:enum]
+
 #endif /* mainHeader_h */
 
 

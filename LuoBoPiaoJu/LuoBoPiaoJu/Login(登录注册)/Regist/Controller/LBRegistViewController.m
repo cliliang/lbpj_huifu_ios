@@ -152,7 +152,17 @@
     [timer timeFire];
     
     NSString *url = [NSString stringWithFormat:@"%@%@", URL_HOST, url_yanZhengMa];
-    NSDictionary *param = @{@"mobile":self.tf_phoneNmuber.text};
+    NSMutableString *secrteString = [[NSMutableString alloc] init];
+    [secrteString appendString:self.tf_phoneNmuber.text];
+    [secrteString appendString:kSendSecurtyType(SendSecurtyTypeRegister)];
+    [secrteString appendString:kDeviceType];
+    [secrteString appendString:kMd5SecretCode];
+    kLog(@"%@", secrteString);
+    NSString *md5String = [secrteString MD5Hash];
+    NSDictionary *param = @{@"mobile":self.tf_phoneNmuber.text,
+                            @"type":kSendSecurtyType(SendSecurtyTypeRegister),
+                            @"deviceType":kDeviceType,
+                            @"encryptKey":md5String};
     [HTTPTools POSTWithUrl:url parameter:param progress:nil success:^(NSDictionary *dict, BOOL successOrNot) {
     } failure:nil];
 }

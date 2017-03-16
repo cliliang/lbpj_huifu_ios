@@ -46,7 +46,17 @@
     [view1 setButtonBlock:^{
         // 发送验证码
         NSString *urlString = [NSString stringWithFormat:@"%@%@", URL_HOST, url_yanZhengMa];
-        NSDictionary *param = @{@"mobile":weakSelf.view1.textField.text};
+        NSMutableString *secrteString = [[NSMutableString alloc] init];
+        [secrteString appendString:weakSelf.view1.textField.text];
+        [secrteString appendString:kSendSecurtyType(SendSecurtyTypeChangeMobile)];
+        [secrteString appendString:kDeviceType];
+        [secrteString appendString:kMd5SecretCode];
+        kLog(@"%@", secrteString);
+        NSString *md5String = [secrteString MD5Hash];
+        NSDictionary *param = @{@"mobile":weakSelf.view1.textField.text,
+                                @"type":kSendSecurtyType(SendSecurtyTypeChangeMobile),
+                                @"deviceType":kDeviceType,
+                                @"encryptKey":md5String};
         [HTTPTools POSTWithUrl:urlString parameter:param progress:nil success:^(NSDictionary * _Nonnull dict, BOOL successOrNot) {
             
         } failure:nil];

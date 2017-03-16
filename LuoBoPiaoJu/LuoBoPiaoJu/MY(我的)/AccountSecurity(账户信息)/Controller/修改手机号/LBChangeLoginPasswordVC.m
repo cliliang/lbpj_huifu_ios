@@ -55,7 +55,17 @@
             // 发送验证码
             [[PSSToast shareToast] showMessage:@"验证码发送成功"];
             NSString *urlString = [NSString stringWithFormat:@"%@%@", URL_HOST, url_yanZhengMa];
-            NSDictionary *param = @{@"mobile":weakSelf.view_1.textField.text};
+            NSMutableString *secrteString = [[NSMutableString alloc] init];
+            [secrteString appendString:weakSelf.view_1.textField.text];
+            [secrteString appendString:kSendSecurtyType(SendSecurtyTypeChangePsd)];
+            [secrteString appendString:kDeviceType];
+            [secrteString appendString:kMd5SecretCode];
+            kLog(@"%@", secrteString);
+            NSString *md5String = [secrteString MD5Hash];
+            NSDictionary *param = @{@"mobile":weakSelf.view_1.textField.text,
+                                    @"type":kSendSecurtyType(SendSecurtyTypeChangePsd),
+                                    @"deviceType":kDeviceType,
+                                    @"encryptKey":md5String};
             [HTTPTools POSTWithUrl:urlString parameter:param progress:nil success:^(NSDictionary * _Nonnull dict, BOOL successOrNot) {
                 
             } failure:nil];
