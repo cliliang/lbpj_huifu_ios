@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBFenXiangLineView">
+            <rect key="frame" x="0.0" y="0.0" width="426" height="127"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-eN-mbn">
+                    <rect key="frame" x="0.0" y="-47" width="213" height="174"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="btn_clickLeft:" destination="iN0-l3-epB" eventType="touchUpInside" id="ed7-Lk-LhY"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5if-oJ-3KB">
+                    <rect key="frame" x="213" y="-47" width="213" height="174"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <action selector="btn_clickRight:" destination="iN0-l3-epB" eventType="touchUpInside" id="Emr-fR-JMo"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk2-AD-SXa">
+                    <rect key="frame" x="89" y="98" width="34" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="ztk-MK-6Py"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="朋友圈" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y3a-FT-F8z">
+                    <rect key="frame" x="294" y="98" width="51" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="Wfw-Lg-D1z"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="PingFangSC-Light" family="PingFang SC" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="youmeng_weixin" translatesAutoresizingMaskIntoConstraints="NO" id="uVN-Ko-MTm">
+                    <rect key="frame" x="76.5" y="20" width="60" height="60"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="youmeng_pengyouquan" translatesAutoresizingMaskIntoConstraints="NO" id="YXV-bP-2Y5">
+                    <rect key="frame" x="289.5" y="20" width="60" height="60"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="y3a-FT-F8z" firstAttribute="top" secondItem="YXV-bP-2Y5" secondAttribute="bottom" constant="18.5" id="0JS-tl-rsp"/>
+                <constraint firstItem="5if-oJ-3KB" firstAttribute="leading" secondItem="HHx-eN-mbn" secondAttribute="trailing" id="0uN-pL-dSG"/>
+                <constraint firstItem="YXV-bP-2Y5" firstAttribute="centerX" secondItem="5if-oJ-3KB" secondAttribute="centerX" id="8Rf-on-oXF"/>
+                <constraint firstItem="HHx-eN-mbn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Azw-I0-jHh"/>
+                <constraint firstItem="5if-oJ-3KB" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Dwe-ep-Oex"/>
+                <constraint firstItem="y3a-FT-F8z" firstAttribute="centerX" secondItem="5if-oJ-3KB" secondAttribute="centerX" id="Nb7-zH-h6m"/>
+                <constraint firstAttribute="bottom" secondItem="HHx-eN-mbn" secondAttribute="bottom" id="Qc2-jy-VXA"/>
+                <constraint firstItem="bk2-AD-SXa" firstAttribute="top" secondItem="uVN-Ko-MTm" secondAttribute="bottom" constant="18.5" id="V8T-fJ-bEF"/>
+                <constraint firstAttribute="bottom" secondItem="y3a-FT-F8z" secondAttribute="bottom" constant="13.5" id="Z2M-pd-swP"/>
+                <constraint firstAttribute="bottom" secondItem="bk2-AD-SXa" secondAttribute="bottom" constant="13.5" id="dEy-Qm-kDd"/>
+                <constraint firstItem="5if-oJ-3KB" firstAttribute="width" secondItem="HHx-eN-mbn" secondAttribute="width" id="kwZ-Pa-Xdn"/>
+                <constraint firstItem="bk2-AD-SXa" firstAttribute="centerX" secondItem="HHx-eN-mbn" secondAttribute="centerX" id="n8q-HZ-5Am"/>
+                <constraint firstAttribute="trailing" secondItem="5if-oJ-3KB" secondAttribute="trailing" id="rCy-i4-hnp"/>
+                <constraint firstItem="HHx-eN-mbn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="u04-xG-D4O"/>
+                <constraint firstAttribute="bottom" secondItem="5if-oJ-3KB" secondAttribute="bottom" id="vSI-7P-0lA"/>
+                <constraint firstItem="uVN-Ko-MTm" firstAttribute="centerX" secondItem="HHx-eN-mbn" secondAttribute="centerX" id="zsS-1T-GHr"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="653" y="134.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="youmeng_pengyouquan" width="60" height="60"/>
+        <image name="youmeng_weixin" width="60" height="60"/>
+    </resources>
+</document>

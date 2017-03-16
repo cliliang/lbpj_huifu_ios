@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="153" id="KGk-i7-Jjw" customClass="LBMyMoneyTVCell">
+            <rect key="frame" x="0.0" y="0.0" width="455" height="118"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="455" height="117.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="chY-ly-Grd">
+                        <rect key="frame" x="10" y="10" width="435" height="107.5"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgr-PS-AjF" userLabel="colorView">
+                        <rect key="frame" x="10" y="10" width="435" height="34"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BLc-fX-Rl4">
+                                <rect key="frame" x="0.0" y="33" width="435" height="1"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.071087293388429756" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="pyq-qF-ndX"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银票苗第n期" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-vd-JAy">
+                                <rect key="frame" x="20" y="9" width="400" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                                <color key="textColor" red="0.25098039215686274" green="0.25098039215686274" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="75C-Yq-ifx"/>
+                            <constraint firstItem="JUo-vd-JAy" firstAttribute="centerY" secondItem="dgr-PS-AjF" secondAttribute="centerY" id="9aV-I4-idn"/>
+                            <constraint firstAttribute="trailing" secondItem="JUo-vd-JAy" secondAttribute="trailing" constant="15" id="BzN-Tc-QE6"/>
+                            <constraint firstItem="JUo-vd-JAy" firstAttribute="leading" secondItem="dgr-PS-AjF" secondAttribute="leading" constant="20" id="M9A-AH-dm6"/>
+                            <constraint firstAttribute="trailing" secondItem="BLc-fX-Rl4" secondAttribute="trailing" id="aZW-tb-H5G"/>
+                            <constraint firstItem="BLc-fX-Rl4" firstAttribute="leading" secondItem="dgr-PS-AjF" secondAttribute="leading" id="pdx-fJ-Omm"/>
+                            <constraint firstAttribute="bottom" secondItem="BLc-fX-Rl4" secondAttribute="bottom" id="uVb-WW-e4f"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.069699121900826444" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="chY-ly-Grd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="1Iy-3t-Ocr"/>
+                    <constraint firstAttribute="trailing" secondItem="chY-ly-Grd" secondAttribute="trailing" constant="10" id="CEc-7t-bnm"/>
+                    <constraint firstItem="chY-ly-Grd" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xpf-CC-pFi"/>
+                    <constraint firstItem="dgr-PS-AjF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Xze-j5-Pse"/>
+                    <constraint firstAttribute="bottom" secondItem="chY-ly-Grd" secondAttribute="bottom" id="dGi-Z2-hgJ"/>
+                    <constraint firstAttribute="trailing" secondItem="dgr-PS-AjF" secondAttribute="trailing" constant="10" id="iox-at-Wd0"/>
+                    <constraint firstItem="dgr-PS-AjF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="vHJ-39-0EQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label_title" destination="JUo-vd-JAy" id="ArF-zO-Swq"/>
+                <outlet property="view_bg" destination="chY-ly-Grd" id="Y59-RD-9og"/>
+                <outlet property="view_color" destination="dgr-PS-AjF" id="v6b-Fu-9yh"/>
+            </connections>
+            <point key="canvasLocation" x="69.5" y="165"/>
+        </tableViewCell>
+    </objects>
+</document>

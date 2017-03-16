@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBFindBackViewController">
+            <connections>
+                <outlet property="btn_YanZhengMa" destination="59H-8L-0XE" id="FiB-Hz-P8t"/>
+                <outlet property="btn_nextButton" destination="QGn-cb-J5P" id="urT-F9-owO"/>
+                <outlet property="tf_YanZhengMa" destination="lVE-pR-brs" id="lU9-oy-Qaf"/>
+                <outlet property="tf_phoneNumber" destination="oXr-ft-VPd" id="1zN-7d-K3t"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d0a-gb-EY3">
+                    <rect key="frame" x="0.0" y="79" width="320" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入您的手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXr-ft-VPd">
+                            <rect key="frame" x="10" y="0.0" width="300" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="0WZ-GV-2cQ"/>
+                        <constraint firstItem="oXr-ft-VPd" firstAttribute="leading" secondItem="d0a-gb-EY3" secondAttribute="leading" constant="10" id="9ql-o0-NKO"/>
+                        <constraint firstAttribute="bottom" secondItem="oXr-ft-VPd" secondAttribute="bottom" id="Q9r-7H-3za"/>
+                        <constraint firstItem="oXr-ft-VPd" firstAttribute="top" secondItem="d0a-gb-EY3" secondAttribute="top" id="cP2-uk-CSj"/>
+                        <constraint firstAttribute="trailing" secondItem="oXr-ft-VPd" secondAttribute="trailing" constant="10" id="evJ-q9-ePR"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5K8-U0-P5t">
+                    <rect key="frame" x="0.0" y="129" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.66274509803921566" green="0.6588235294117647" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="DrI-f0-9SF"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9fi-HP-cYT">
+                    <rect key="frame" x="0.0" y="130" width="320" height="50"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入验证码" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lVE-pR-brs">
+                            <rect key="frame" x="10" y="0.0" width="215" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="fUu-Vl-CMh"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="59H-8L-0XE">
+                            <rect key="frame" x="225" y="8" width="85" height="33"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <state key="normal" title="获取验证码">
+                                <color key="titleColor" red="0.60000002379999995" green="0.60000002379999995" blue="0.60000002379999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="clickYanZhengMaBtn:" destination="-1" eventType="touchUpInside" id="8it-1X-2xM"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.92549019610000005" green="0.92156862750000001" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="59H-8L-0XE" secondAttribute="trailing" constant="10" id="9Xz-wP-20B"/>
+                        <constraint firstItem="lVE-pR-brs" firstAttribute="leading" secondItem="9fi-HP-cYT" secondAttribute="leading" constant="10" id="Jl9-f1-m7X"/>
+                        <constraint firstItem="59H-8L-0XE" firstAttribute="centerY" secondItem="lVE-pR-brs" secondAttribute="centerY" id="LNU-f7-7wR"/>
+                        <constraint firstItem="lVE-pR-brs" firstAttribute="top" secondItem="9fi-HP-cYT" secondAttribute="top" id="Tq1-Zi-FOR"/>
+                        <constraint firstItem="59H-8L-0XE" firstAttribute="leading" secondItem="lVE-pR-brs" secondAttribute="trailing" id="sla-zw-UJS"/>
+                        <constraint firstAttribute="height" constant="50" id="zrB-EP-A1t"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QGn-cb-J5P">
+                    <rect key="frame" x="35" y="214" width="250" height="40"/>
+                    <color key="backgroundColor" red="0.92549019607843142" green="0.92156862745098034" blue="0.95294117647058818" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="qsi-7J-fdC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="下一步">
+                        <color key="titleColor" red="0.20000000000000001" green="0.2274509804" blue="0.23137254900000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickNextButton:" destination="-1" eventType="touchUpInside" id="rTU-Ya-gh4"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="QGn-cb-J5P" secondAttribute="trailing" constant="35" id="1Jj-Oe-YpP"/>
+                <constraint firstItem="d0a-gb-EY3" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="79" id="6dB-Y8-X7B"/>
+                <constraint firstItem="9fi-HP-cYT" firstAttribute="top" secondItem="5K8-U0-P5t" secondAttribute="bottom" id="9jT-RM-jyY"/>
+                <constraint firstItem="5K8-U0-P5t" firstAttribute="top" secondItem="d0a-gb-EY3" secondAttribute="bottom" id="FfG-g3-ghe"/>
+                <constraint firstItem="d0a-gb-EY3" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="OJs-3w-6qd"/>
+                <constraint firstItem="QGn-cb-J5P" firstAttribute="top" secondItem="9fi-HP-cYT" secondAttribute="bottom" constant="34" id="SKX-oD-ZAc"/>
+                <constraint firstAttribute="trailing" secondItem="9fi-HP-cYT" secondAttribute="trailing" id="V7i-R9-M0U"/>
+                <constraint firstItem="5K8-U0-P5t" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ggl-Ua-RVT"/>
+                <constraint firstItem="9fi-HP-cYT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="lx2-IV-JeR"/>
+                <constraint firstAttribute="trailing" secondItem="5K8-U0-P5t" secondAttribute="trailing" id="wkj-r8-B8M"/>
+                <constraint firstItem="QGn-cb-J5P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="35" id="y5Z-a0-Apb"/>
+                <constraint firstAttribute="trailing" secondItem="d0a-gb-EY3" secondAttribute="trailing" id="yrv-kt-ylB"/>
+            </constraints>
+            <point key="canvasLocation" x="225" y="207"/>
+        </view>
+    </objects>
+</document>

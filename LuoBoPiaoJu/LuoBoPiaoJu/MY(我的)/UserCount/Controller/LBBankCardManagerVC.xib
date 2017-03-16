@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LBBankCardManagerVC">
+            <connections>
+                <outlet property="btn_cardTitle" destination="RIU-w9-9kv" id="jUN-Ny-Go9"/>
+                <outlet property="btn_jieBang" destination="3bQ-GV-na4" id="1JO-Sj-u6e"/>
+                <outlet property="imageView_bankCard" destination="3pt-KH-b2E" id="akj-kB-cvT"/>
+                <outlet property="label_name" destination="Qc9-cr-csQ" id="Fji-Ev-25H"/>
+                <outlet property="label_yinHangKa" destination="b1V-0b-mfW" id="RTZ-VK-2OR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="view_back" destination="thL-Sw-4ee" id="sxs-8O-wqt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="thL-Sw-4ee">
+                    <rect key="frame" x="11" y="102" width="298" height="163"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3pt-KH-b2E">
+                            <rect key="frame" x="0.0" y="0.0" width="298" height="163"/>
+                        </imageView>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3bQ-GV-na4">
+                            <rect key="frame" x="228" y="133" width="30" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="oBE-8m-2l5"/>
+                            </constraints>
+                            <state key="normal" title="解绑">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickJieBangButton:" destination="-1" eventType="touchUpInside" id="QIP-66-R65"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIU-w9-9kv">
+                            <rect key="frame" x="109" y="68" width="80" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="26" id="bfW-R9-Qw0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
+                            <state key="normal">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clickCardTitle:" destination="-1" eventType="touchUpInside" id="dB1-vK-MQg"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qc9-cr-csQ">
+                            <rect key="frame" x="170" y="133" width="30" height="15"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="15" id="wIz-ni-sC1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1V-0b-mfW">
+                            <rect key="frame" x="45" y="25" width="60" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.83137254901960789" green="0.83137254901960789" blue="0.83137254901960789" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="3bQ-GV-na4" firstAttribute="leading" secondItem="Qc9-cr-csQ" secondAttribute="trailing" constant="28" id="BN1-fY-DVV"/>
+                        <constraint firstItem="RIU-w9-9kv" firstAttribute="centerX" secondItem="thL-Sw-4ee" secondAttribute="centerX" id="E5k-zu-e6i"/>
+                        <constraint firstItem="3pt-KH-b2E" firstAttribute="leading" secondItem="thL-Sw-4ee" secondAttribute="leading" id="EWZ-fb-McH"/>
+                        <constraint firstAttribute="trailing" secondItem="3pt-KH-b2E" secondAttribute="trailing" id="IuJ-El-akA"/>
+                        <constraint firstItem="3pt-KH-b2E" firstAttribute="top" secondItem="thL-Sw-4ee" secondAttribute="top" id="Knx-zm-PkZ"/>
+                        <constraint firstAttribute="trailing" secondItem="3bQ-GV-na4" secondAttribute="trailing" constant="40" id="al5-0g-DBY"/>
+                        <constraint firstAttribute="width" constant="298" id="gNS-QR-eNL"/>
+                        <constraint firstItem="b1V-0b-mfW" firstAttribute="leading" secondItem="thL-Sw-4ee" secondAttribute="leading" constant="45" id="m3c-XJ-nJE"/>
+                        <constraint firstAttribute="bottom" secondItem="3pt-KH-b2E" secondAttribute="bottom" id="n6l-g1-Zck"/>
+                        <constraint firstItem="b1V-0b-mfW" firstAttribute="top" secondItem="thL-Sw-4ee" secondAttribute="top" constant="25" id="nYJ-Hy-aQC"/>
+                        <constraint firstAttribute="bottom" secondItem="Qc9-cr-csQ" secondAttribute="bottom" constant="15" id="oGk-5T-sPi"/>
+                        <constraint firstAttribute="height" constant="163" id="uzb-z1-zpj"/>
+                        <constraint firstAttribute="bottom" secondItem="3bQ-GV-na4" secondAttribute="bottom" constant="15" id="w6D-qw-n3j"/>
+                        <constraint firstItem="RIU-w9-9kv" firstAttribute="centerY" secondItem="thL-Sw-4ee" secondAttribute="centerY" id="zCq-iq-jVY"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="thL-Sw-4ee" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Ww3-vK-7PW"/>
+                <constraint firstItem="thL-Sw-4ee" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="102" id="yaH-ZM-KOb"/>
+            </constraints>
+            <point key="canvasLocation" x="308" y="323"/>
+        </view>
+    </objects>
+</document>

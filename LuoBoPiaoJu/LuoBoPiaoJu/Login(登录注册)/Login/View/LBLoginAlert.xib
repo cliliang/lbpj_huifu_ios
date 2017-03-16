@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LBLoginAlert">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nKU-06-ZAg">
+                    <rect key="frame" x="35" y="224" width="250" height="120"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="P74-uT-A7P"/>
+                        <constraint firstAttribute="width" constant="250" id="T2o-NV-Ct9"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FuU-tt-IPd">
+                    <rect key="frame" x="55" y="239" width="210" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="1gU-Qg-rSW"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="message" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CaH-uo-UAB">
+                    <rect key="frame" x="54" y="263" width="210" height="14.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="210" id="Fhh-61-e8N"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oM7-0n-ZLK">
+                    <rect key="frame" x="35" y="300" width="250" height="44"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="250" id="DCZ-Be-MwQ"/>
+                        <constraint firstAttribute="height" constant="44" id="RRm-DE-OGL"/>
+                    </constraints>
+                    <state key="normal" title="我知道了">
+                        <color key="titleColor" red="0.99215686274509807" green="0.36470588235294116" blue="0.27843137254901962" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="clickYesButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="m6L-Am-FLv"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oM7-0n-ZLK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="38" id="Cfn-2f-5Nm"/>
+                <constraint firstItem="FuU-tt-IPd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Iar-Ks-5KJ"/>
+                <constraint firstItem="FuU-tt-IPd" firstAttribute="top" secondItem="nKU-06-ZAg" secondAttribute="top" constant="15" id="Jyn-Qc-ORN"/>
+                <constraint firstItem="oM7-0n-ZLK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ugq-jW-CiZ"/>
+                <constraint firstItem="CaH-uo-UAB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bRy-Hh-GVz"/>
+                <constraint firstItem="nKU-06-ZAg" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fbZ-Gp-9Jr"/>
+                <constraint firstItem="CaH-uo-UAB" firstAttribute="top" secondItem="FuU-tt-IPd" secondAttribute="bottom" constant="10" id="wNI-no-rxv"/>
+                <constraint firstItem="nKU-06-ZAg" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="zAY-Aj-C3c"/>
+            </constraints>
+            <connections>
+                <outlet property="btn_Yes" destination="oM7-0n-ZLK" id="Yye-ww-Y0g"/>
+                <outlet property="imageV" destination="nKU-06-ZAg" id="lEN-tW-Vm9"/>
+                <outlet property="label_message" destination="CaH-uo-UAB" id="QIS-Kl-NDY"/>
+                <outlet property="label_title" destination="FuU-tt-IPd" id="PuF-jm-oWV"/>
+            </connections>
+            <point key="canvasLocation" x="287" y="-55"/>
+        </view>
+    </objects>
+</document>

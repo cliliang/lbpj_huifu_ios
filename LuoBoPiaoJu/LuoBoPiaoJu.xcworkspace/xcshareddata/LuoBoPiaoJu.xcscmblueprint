@@ -1,0 +1,42 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "5D64C0AFDFE48F2B6987CBB9177D73504546585F",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++3738" : {
+
+    },
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++208" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++3738" : 0,
+    "5D64C0AFDFE48F2B6987CBB9177D73504546585F" : 9223372036854775807,
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++208" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2E77F1D9-7B1D-4821-A239-5F5396A31467",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++3738" : "LuoBoPJ%E6%AD%A3%E5%9C%A8%E5%BC%80%E5%8F%91\/",
+    "5D64C0AFDFE48F2B6987CBB9177D73504546585F" : "ZZLuoBoPJ\/",
+    "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++208" : "luobopiaoju%E5%9C%A8%E5%BC%80%E5%8F%91\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "LuoBoPiaoJu",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "LuoBoPiaoJu\/LuoBoPiaoJu.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/git.oschina.net\/PSShan\/LuoBoPiaoJu.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "5D64C0AFDFE48F2B6987CBB9177D73504546585F"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.2\/lbpj_svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++208"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/192.168.1.2\/lbpj_svn",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "974dfd98-4c4d-4d71-a6d0-111fcc364c3c++3738"
+    }
+  ]
+}
